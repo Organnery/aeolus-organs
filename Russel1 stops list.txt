@@ -1,0 +1,44 @@
+Stops list for Russel1
+
+Pedal
+------
+Subbass 16
+Principal 8
+Gedakt 8
+Twelfth 5 1/3
+Octave 4
+Rauschpf. III rks
+Fagotto 16
+Schalmei 8
+SW-Pedal
+Gt-Pedal
+
+Man I
+------
+Boudon 16
+Principal 8
+Rohr Flute 8
+Flute 8
+Open Diapason 8
+Flute 8
+Open Diapason 8
+Flute 8
+Open Diapason 8
+Trumpet 8
+Sw-Gt
+Tremulant
+
+Man II
+-------
+Gedakt 8
+Salicional 8
+Voix celeste 8
+Principal 4
+Rohr flute 4
+Twelfth 2 2/3
+Octave 2
+Nazard 1 3/5
+Sifflute 1
+Scharf V rks
+Vox humana 8
+Tremulant
