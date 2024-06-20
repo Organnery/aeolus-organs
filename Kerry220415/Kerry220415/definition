@@ -1,0 +1,154 @@
+# Aeolus instrument definition file
+# Created by Aeolus-0.9.10 at Sat Oct  1 16:18:26 2022
+
+
+/instr/new
+/tuning 440.0 5
+
+# Keyboards
+#
+/manual/new   III
+/manual/new   II
+/manual/new   I
+/pedal/new    P
+
+# Divisions
+#
+/divis/new    III      1  1
+/rank         C  17  K3_montre8.ae0
+/rank         W  20  K3_OpenFlute8.ae0
+/rank         R  17  K3_Viole8.ae0
+/rank         L  26  K3_VoixCeleste8.ae0
+/rank         R  21  K3_Flute4.ae0
+/rank         R  30  K3_Principal4.ae0
+/rank         C  20  K3_PleinJeuxIII.ae0
+/rank         L  31  K3_Basson16.ae0
+/rank         R  23  K3_Trompette8.ae0
+/rank         L  13  K3_Clarion4.ae0
+/rank         R  27  K3_Hautbois8.ae0
+/swell
+/tremul       8.0  0.6
+/divis/end
+
+/divis/new    II       2  2
+/rank         L  23  K2_Bourdon8.ae0
+/rank         C  21  K2_Dulciana8.ae0
+/rank         R  19  K2_Rohrflute4.ae0
+/rank         C  25  K2_Principal4.ae0
+/rank         L  23  K2_Nasard223.ae0
+/rank         R  24  K2_Flute2.ae0
+/rank         L  26  K2_Tierce135.ae0
+/rank         R  30  K2_Larigot113.ae0
+/rank         R  22  K2_CymbaleIII.ae0
+/rank         W  24  K2_Cromorne8.ae0
+/rank         L  18  K2_Trompette8.ae0
+/swell
+/tremul       4.8  0.2
+/divis/end
+
+/divis/new    I        3  3
+/rank         C  10  K1_Bourdon16.ae0
+/rank         C  21  K1_Montre8.ae0
+/rank         L  16  K1_Gedeckt8.ae0
+/rank         R  19  K1_Gamba8.ae0
+/rank         R  14  K1_HarmonicFlute8.ae0
+/rank         C  16  K1_Prestant4.ae0
+/rank         L  14  K1_Flute4.ae0
+/rank         C  13  K1_Quinte223.ae0
+/rank         C   4  K1_Doublette2.ae0
+/rank         C   1  K1_FournitureIV.ae0
+/rank         R  10  K1_Cornet_II-V.ae0
+/rank         W  15  K1_Bombarde16.ae0
+/rank         L  18  K1_Trumpet8.ae0
+/rank         R  10  K1_Clarion4.ae0
+/divis/end
+
+/divis/new    P        4  4
+/rank         C  20  KP_Bourdon32.ae0
+/rank         C  28  KP_Soubasse16.ae0
+/rank         R  17  KP_Bourdon16.ae0
+/rank         C  21  KP_Principal16.ae0
+/rank         L  10  KP_Violoncelle8.ae0
+/rank         R  15  KP_Flute8.ae0
+/rank         L  22  KP_Flute4.ae0
+/rank         R  26  KP_Principal4.ae0
+/rank         C  18  KP_Mixture-III.ae0
+/rank         C  30  KP_Bombarde32.ae0
+/rank         W  10  KP_Posaune16.ae0
+/rank         W  15  KP_Trumpet8.ae0
+/rank         L   5  KP_Clarion4.ae0
+/divis/end
+
+# Interface groups
+#
+/group/new    III    
+/stop         0   1   1
+/stop         0   1   2
+/stop         0   1   3
+/stop         0   1   4
+/stop         0   1   5
+/stop         0   1   6
+/stop         0   1   7
+/stop         0   1   8
+/stop         0   1   9
+/stop         0   1  10
+/stop         0   1  11
+/tremul       1       TR       Tremulant
+/group/end
+
+/group/new    II     
+/stop         0   2   1
+/stop         0   2   2
+/stop         0   2   3
+/stop         0   2   4
+/stop         0   2   5
+/stop         0   2   6
+/stop         0   2   7
+/stop         0   2   8
+/stop         0   2   9
+/stop         0   2  10
+/stop         0   2  11
+/tremul       2       TR       Tremulant
+/coupler      2   1   C2+3     II+III
+/group/end
+
+/group/new    I      
+/stop         0   3   1
+/stop         0   3   2
+/stop         0   3   3
+/stop         0   3   4
+/stop         0   3   5
+/stop         0   3   6
+/stop         0   3   7
+/stop         0   3   8
+/stop         0   3   9
+/stop         0   3  10
+/stop         0   3  11
+/stop         0   3  12
+/stop         0   3  13
+/stop         0   3  14
+/coupler      3   2   C1+2     I+II
+/coupler      3   1   C1+3     I+III
+/group/end
+
+/group/new    P      
+/stop         0   4   1
+/stop         0   4   2
+/stop         0   4   3
+/stop         0   4   4
+/stop         0   4   5
+/stop         0   4   6
+/stop         0   4   7
+/stop         0   4   8
+/stop         0   4   9
+/stop         0   4  10
+/stop         0   4  11
+/stop         0   4  12
+/stop         0   4  13
+/coupler      4   3   CP+1     P+I
+/coupler      4   2   CP+2     P+II
+/coupler      4   1   CP+3     P+III
+/group/end
+
+
+/instr/end
